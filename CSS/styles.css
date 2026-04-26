@@ -1,14 +1,16 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 .herr-von-muellerhoff-regular {
-  font-family: "Herr Von Muellerhoff", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    
-    background-color:#d7d2cd;
+
+    background-color: #d7d2cd;
     line-height: 1.6;
 }
 
@@ -17,45 +19,66 @@ header {
 }
 
 h1 {
-    color:#402516;
+    color: #402516;
     font-size: 4rem;
     font-family: "Herr Von Muellerhoff", cursive;
-};
+}
+
+;
+
+.nav-links {
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center
+}
+.nav-links > a {
+    padding: 40px;
+    
+}
 
 
-
-
-h2{
+h2 {
     font-family: "Dancing Script", cursive;
     font-size: 2rem;
-    color:#402516;
+    color: #402516;
 }
 
 .section {
-padding: 40px;
-margin: 20px 0;
-border: 1.8px solid #ccc;
-border-radius: 6px;
+    padding: 40px;
+    margin: 20px 0;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
 }
 
-p{
+.proyectos-links {
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center
+}
+
+p {
     font-family: "Dancing Script", cursive;
     font-size: 1.4rem;
 }
-em{
+
+em {
     font-family: "Dancing Script", cursive;
     font-size: 1rem;
 }
-a{
+
+a {
     font-family: "Dancing Script", cursive;
     font-size: 1.4rem;
     text-decoration: none;
-    color:#736355;
+    color: #736355;
+    
 }
 
 footer {
-background-color: #A4A668;
-color: white;
-padding: 40px;
-text-align: center;
+    background-color: #A4A668;
+    color: white;
+    padding: 40px;
+    text-align: center;
 }
