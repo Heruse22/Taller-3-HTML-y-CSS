@@ -1,6 +1,7 @@
 /* body {
     ba
 } */
+* { box-sizing: border-box; }
 
 h1 {
     color:#402516;
@@ -25,6 +26,14 @@ h2{
     font-size: 2rem;
     color:#402516;
 }
+
+.section {
+padding: 40px;
+margin: 20px 0;
+border: 1.8px solid #ccc;
+border-radius: 6px;
+}
+
 p{
     font-family: "Dancing Script", cursive;
     font-size: 1.4rem;
