@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 .herr-von-muellerhoff-regular {
@@ -11,37 +14,206 @@
 body {
 
     background-color: #d7d2cd;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 header {
     padding: 30px;
+    display: grid;
+    gap: 20px  ;
+    grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
 }
+
+.header-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  overflow: hidden;
+}
+ 
+.photo-main img,
+.header_div_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+ 
+.photo-main {
+  height: 100%;
+}
+ 
+.header_div_img {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  height: 100%;
+}
+
 
 h1 {
     color: #402516;
-    font-size: 4rem;
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
     font-family: "Herr Von Muellerhoff", cursive;
+    line-height: 1.1;
+  font-weight: 400;
 }
 
 ;
 
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 3rem 3rem 3.5rem;
+  border-left: 1px solid #b8b0a7;
+}
+ 
+.label {
+  font-family: "Cormorant Garamond", Georgia, serif;;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #736355;
+  display: block;
+  margin-bottom: 1rem;
+}
+ 
+.header-top h1 {
+  margin-top: 0.5rem;
+}
+
 .nav-links {
     padding: 40px;
     display: flex;
-    gap: 20px;
-    justify-content: center
-}
-.nav-links > a {
-    padding: 40px;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
     
 }
+.nav-links > a {
+    font-size: 2.5rem;
+    padding: 20px;
+    position: relative;
+    
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color:  #402516;
+  transition: width 0.3s ease;
+}
+ 
+.nav-links a:hover::after {
+  width: 100%;
+}
+ 
+.nav-links a:hover {
+  color:  #402516;
+  transform: none;
+}
+
+.social_media {
+    padding: 40px;
+    display: flex;
+    gap: 0.6rem;
+    
+    flex-direction: column;
+    
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.1rem;
+  color: #736355;
+}
+ 
+.social-item img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+ 
+.social-item span {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+ 
+.social-item:hover {
+  color:  #402516;
+  transform: translateX(4px);
+}
+
+.social_media > a {
+    padding: 20px;
+    
+}
+
+
+.social_media > a > img {
+    width: 50px;
+}
+
 
 
 h2 {
     font-family: "Dancing Script", cursive;
     font-size: 2rem;
     color: #402516;
+    margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+
+.header_img {
+    display: flex;
+    gap: 62px;
+    align-items: center;
+    width: 100%;
+}
+
+.header_div_img {
+    flex: 1;
+}
+/* 
+.header_img_1 {
+    width: 110%;
+}
+.header_img_2 {
+    width: 54.5%;
+} */
+
+.section-about,
+.section-projects {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+ 
+.section-label {
+  font-family: "Cormorant Garamond", Georgia, serif;;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #b8b0a7;
+  padding-top: 0.4rem;
+}
+ 
+.divider {
+  border: none;
+  border-top: 1px solid #b8b0a7;
+  margin: 0;
 }
 
 .section {
@@ -49,18 +221,49 @@ h2 {
     margin: 20px 0;
     border: 1.8px solid #ccc;
     border-radius: 6px;
+    width: 40%;
+}
+.section_header {
+    padding: 40px;
+    margin: 20px 0;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    width: 40%;
+}
+
+.project-card {
+  margin-bottom: 2.2rem;
+}
+ 
+.project-card a {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color:  #402516;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+ 
+.project-card a:hover {
+  color: #A4A668;
+  transform: translateX(4px);
+}
+ 
+.project-card p {
+  margin-top: 0.4rem;
 }
 
 .proyectos-links {
     padding: 40px;
-    display: flex;
-    gap: 20px;
+    
     justify-content: center
 }
 
 p {
     font-family: "Dancing Script", cursive;
     font-size: 1.4rem;
+    line-height: 1.8;
+  font-style: italic;
 }
 
 em {
@@ -70,17 +273,100 @@ em {
 
 a {
     font-family: "Dancing Script", cursive;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-decoration: none;
     color: #736355;
+    transition: color 0.25s ease, transform 0.25s ease;
+    display: inline-block;
     
+}
+
+a:hover {
+color: #402516;
+transform: scale(1.2);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
 }
 
 footer {
     background-color: #A4A668;
     color: white;
-    padding: 40px;
+    padding: 3rem 3.5rem 1.5rem;
     text-align: center;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+ 
+.footer-brand h1 {
+  color: #fff;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+ 
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+ 
+/* Nav en footer */
+.footer-nav {
+  gap: 1.5rem;
+}
+ 
+.footer-nav a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+}
+ 
+.footer-nav a:hover {
+  color: #fff;
+  transform: none;
+}
+ 
+.footer-nav a::after {
+  background-color: #fff;
+}
+ 
+
+.footer-social {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+ 
+.footer-social .social-item {
+  color: rgba(255, 255, 255, 0.85);
+  gap: 0.5rem;
+}
+ 
+.footer-social .social-item span {
+  font-size: 1rem;
+}
+ 
+.footer-social .social-item:hover {
+  color: #fff;
+  transform: translateX(4px);
+}
+ 
+/* Copyright */
+.footer-copy {
+  font-family: "Cormorant Garamond", Georgia, serif;;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-top: 1.5rem;
+  font-style: normal;
 }
 
 @media (max-width: 600px) {
@@ -89,14 +375,62 @@ body {
 padding: 10px;
 }
 header {
-padding: 15px;
+grid-template-columns: 1fr;
 }
+
+ .header-photos {
+    height: 60vw;
+  }
+ 
+  .header-info {
+    border-left: none;
+    border-top: 1px solid #b8b0a7;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+ 
+  .section-about,
+  .section-projects {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+ 
+  .section-label {
+    padding-top: 0;
+  }
+ 
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+ 
+  .footer-right {
+    align-items: flex-start;
+  }
+ 
+  .footer-social {
+    flex-direction: column;
+  }
+ 
+  
+
 .nav-links {
-flex-direction: column;
-gap: 10px;
+flex-wrap: wrap;
+gap: 1rem;
 }
 img {
 max-width: 100%;
 height: auto;
 }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 3rem 1.2rem;
+  }
+ 
+  footer {
+    padding: 2rem 1.5rem 1rem;
+  }
 }

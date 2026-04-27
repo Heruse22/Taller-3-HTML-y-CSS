@@ -1,38 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Heidy Ruiz</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/styles.css" />
   </head>
 
   <body>
     <header>
-      <h1>Heidy Ruiz Serna</h1>
-    </header>
-    <nav class="nav-links">
-      <a href="#">Inicio</a>
-      <a href="#">Proyectos</a>
-      <a href="#">Contacto</a>
-    </nav>
-    <main>
-      <section class="section">
-        <img src="IMG/foto-heidy.jpeg" alt="" />
-        <div>
-          <a href="https://github.com/Heruse22"
-            ><img src="IMG/Icon_Github.gif" alt="" />
-            <h4>GITHUB</h4></a
-          >
+      <div class="header-photos">
+        <div class="photo-main">
+            <img src="IMG/foto-heidy.jpeg" alt="Heidy Ruiz" class="header_img_1" />
         </div>
-      </section>
-      
-      <article class="section">
-        <div>
+
+        <div class="header_div_img">
+          <img src="IMG/foto_heidy (1).jpeg" alt="" class="" />
+          <img src="IMG/foto_heidy (2).jpeg" alt="" class="" />
+        </div>
+    </div>
+
+      <div class="header-info">
+
+        <div class="header-top">
+            <span class="label">Portfolio</span>
+            <h1>Heidy<br/> Ruiz Serna</h1>
+        </div>
+       
+
+        <nav class="nav-links">
+          <a href="#">Inicio</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+       <div class="social_media">
+          <a href="https://github.com/Heruse22" target="_blank" class="social-item">
+            <img src="IMG/Icon_Github.gif" alt="Github" />
+            <span>GitHub</span></a
+          >
+          <a href="https://www.instagram.com/" target="_blank" class="social-item">
+            <img
+              src="IMG/icons8-instagram-ezgif.com-resize.gif"
+              alt="Instagram"
+            />
+            <span>Instagram</span></a
+          >
+          <a href="https://web.whatsapp.com/" target="_blank" class="social-item">
+            <img
+              src="IMG/icons8-whatsapp-ezgif.com-resize.gif"
+              alt="Whatsapp"
+            />
+            <span>WhatsApp</span>
+            </a>
+        </div>
+        
+        
+    </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="section-label">01</div>
+        <div class="proyectos-links">
           <h2>Sobre mí</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
@@ -41,28 +81,86 @@
             enim ipsum autem.
           </p>
         </div>
-      </article>
-      <article>
-        <div class="proyectos-links">
+      </section>
+
+      <div class="divider"></div>
+
+
+      <section class="section-projects">
+        <div class="section-label">02</div>
+        <div class="proyectos-links" id="proyectos">
           <h2>Proyectos</h2>
-          <ul>
-            <ol>
-              <a href="https://github.com/Heruse22/Entregable_N1"
-                ><strong>Entregable_N1</strong></a
+
+          <div class="project-card">
+
+            <a href="https://github.com/Heruse22/Entregable_N1" target="_blank"
+                ><strong>Entregable_N1 ↗</strong></a
               >
-              <em>Entregable #1 del curso de desarrollo web donde se profundizo sobre el uso de la consola de comandos y se profundizó sobre el desarrollo de paginas web utilizando layout y maquetado web. En adición, se utilizó git en conjunto con github para utilizarlo como repositorio remoto.</em>
-            </ol>
-            <ol>
+              <p
+                >Entregable #1 del curso de desarrollo web donde se profundizo
+                sobre el uso de la consola de comandos y se profundizó sobre el
+                desarrollo de paginas web utilizando layout y maquetado web. En
+                adición, se utilizó git en conjunto con github para utilizarlo
+                como repositorio remoto.</p>
+                 </div>
+
+            <div class="project-card">
+           
               <a
-                href="https://github.com/Heruse22/Taller-2-Retos-de-Git-y-GitHub"
-                ><strong>Taller-2-Retos-de-Git-y-GitHub</strong></a
+                href="https://github.com/Heruse22/Taller-2-Retos-de-Git-y-GitHub" target="_blank"
+                ><strong>Taller-2-Retos-de-Git-y-GitHub ↗</strong></a
               >
-              <em>Taller #2 del curso de desarrollo web - Full Stack en donde realizamos un taller practico sobre el uso del control de versiones de Github</em>
-            </ol>
-          </ul>
+              <p
+                >Taller #2 del curso de desarrollo web - Full Stack en donde
+                realizamos un taller practico sobre el uso del control de
+                versiones de Github</p>
+                 </div>
+
+            
+          
+              
+            
         </div>
-      </article>
+    </section>
     </main>
-    <footer></footer>
+
+
+    <footer id="contacto">
+
+         <div class="footer-inner">
+
+
+        
+        
+        <h1>Heidy <br/> Ruiz Serna</h1>
+
+         </div>
+
+         <div class="footer-right">
+          <nav class="nav-links footer-nav">
+            <a href="#">Inicio</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+          </nav>
+ 
+          <div class="social-media footer-social">
+            <a href="https://github.com/Heruse22" target="_blank" class="social-item">
+              <img src="IMG/Icon_Github.gif" alt="Github" />
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-item">
+              <img src="IMG/icons8-instagram-ezgif.com-resize.gif" alt="Instagram" />
+              <span>Instagram</span>
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="social-item">
+              <img src="IMG/icons8-whatsapp-ezgif.com-resize.gif" alt="Whatsapp" />
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+ 
+      </div>
+      <p class="footer-copy">© 2025 Heidy Ruiz Serna</p>
+    </footer>
   </body>
 </html>
